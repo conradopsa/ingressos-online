@@ -2,8 +2,10 @@
     <head>
         <title>Ingresso Online</title>
         <meta charset="UTF-8">
+
         <link rel="stylesheet" type="text/css" href="index.css">
-        
+                
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>         
     </head>
     <body>
         <div id="site">
@@ -14,20 +16,14 @@
 
             <div id="menu">
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Cadastro</a></li>
-                    <li><a href="">Sobre</a></li>
+                    <li><a onclick="setarPagina('conteudos/inicio')" href="#">Inicio</a></li>
+                    <li><a onclick="setarPagina('conteudos/login')" href="#">Login</a></li>
+                    <li><a onclick="setarPagina('conteudos/cadastro')" href="#">Cadastro</a></li>
+                    <li><a onclick="setarPagina('conteudos/sobre')" href="#">Sobre</a></li>
                 </ul>
             </div>
-
             
             <div id="conteudo">
-                <div class="titulo">EM CARTAZ:</div>
-                <div id="cartazes">
-                    <ul>
-                    </ul>
-                </div>
             </div>
 
             <div id="rodape">
@@ -35,7 +31,8 @@
             </div>
          
         </div>
-        </body>
 
         <script src="index.js"></script>
+    </body>
+    
 </html>

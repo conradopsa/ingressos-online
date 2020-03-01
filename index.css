@@ -85,47 +85,7 @@ body {
   font-size: 18px; margin-top: 11px; margin-left: 5px;
 }
 
-
-#cartazes{
-  /* centralizar */
-  margin: auto;
-  display:table;  
-}
-
-#cartazes img{
-  width:200px;
-  height:auto;
-  
-  max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#cartazes img:hover{
-  -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-
-#cartazes ul {  
-  padding-top: 10px;
-
-  list-style-type: none;
-  overflow: hidden;
-  
-}
-  
-#cartazes li {
-  float: left;
-
-  margin: 10px;
-}
-
-
 #rodape{
-  height:25px;
   background-color:rgb(212, 212, 212);
 
   border-top-style: solid;
@@ -137,6 +97,11 @@ body {
 
 #rodape div{
   padding-top: 6px;
+  padding-bottom: 6px;
+
+  padding-left: 4px;
+  padding-right: 4px;
+
   font: 11px Verdana;
   color: black;
 }
