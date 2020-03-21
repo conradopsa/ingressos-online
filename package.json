@@ -1,0 +1,23 @@
+{
+  "name": "ingressos-online-front",
+  "version": "1.0.0",
+  "description": "Um site que simula a compra e venda de ingressos. Esse projeto é fruto de um trabalho inciado em aula.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conradopsa/ingressos-online-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conradopsa/ingressos-online-front/issues"
+  },
+  "homepage": "https://github.com/conradopsa/ingressos-online-front#readme"
+}
