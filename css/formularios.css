@@ -1,24 +1,46 @@
 
+.backgroud-style {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.fade-to-black {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
 .form-style-5{
 	max-width: 500px;
 	padding: 10px 20px;
-	background: #f4f7f8;
+
 	margin: 10px auto;
 	padding: 20px;
 	background: #f4f7f8;
 	border-radius: 8px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	
+	color: #000;
 }
+
+
 .form-style-5 fieldset{
 	border: none;
 }
 .form-style-5 legend {
+	margin-left: -2px;
 	font-size: 1.4em;
 	margin-bottom: 10px;
 }
+
+.form-style-5 .titulo {
+	font-size: 1.4em;
+	margin-left: -2px;
+	margin-bottom: 30px;
+	margin-top: -2px;
+}
+
 .form-style-5 label {
 	display: block;
 	margin-bottom: 8px;
+	
 }
 .form-style-5 input[type="text"],
 .form-style-5 input[type="date"],
@@ -28,6 +50,7 @@
 .form-style-5 input[type="search"],
 .form-style-5 input[type="time"],
 .form-style-5 input[type="url"],
+.form-style-5 input[type="password"],
 .form-style-5 textarea,
 .form-style-5 select {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -43,7 +66,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	background-color: #e8eeef;
-	color:#8a97a0;
+	color:#282c2e;
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	margin-bottom: 30px;
@@ -56,6 +79,7 @@
 .form-style-5 input[type="search"]:focus,
 .form-style-5 input[type="time"]:focus,
 .form-style-5 input[type="url"]:focus,
+.form-style-5 input[type="password"]:focus,
 .form-style-5 textarea:focus,
 .form-style-5 select:focus{
 	background: #d2d9dd;
@@ -65,7 +89,7 @@
 	height:35px;
 }
 .form-style-5 .number {
-	background: #1abc9c;
+	background: #bc1a1a;
 	color: #fff;
 	height: 30px;
 	width: 30px;
@@ -86,17 +110,40 @@
 	padding: 19px 39px 18px 39px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #1abc9c;
+	background: #bc1a1a;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 100%;
-	border: 1px solid #16a085;
-	border-width: 1px 1px 3px;
+	border: 1px solid #4a212166;
+    border-width: 1px 1px 3px 1px;
 	margin-bottom: 10px;
 }
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-	background: #109177;
+	background: #911010;
 }
+
+
+.transparent {
+	background: #f4f7f8cc;
+}
+
+.transparent input{
+	background: #e8eeefa3 !important;
+}
+
+.transparent input[type="submit"],
+.transparent input[type="button"]
+{
+	background: #bc1a1ad3 !important;
+}
+
+.transparent input[type="submit"]:hover,
+.transparent input[type="button"]:hover
+{
+	background: #911010d3 !important;
+}
+
+

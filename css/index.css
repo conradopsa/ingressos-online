@@ -3,6 +3,7 @@ body {
     color: white;
 
     font: 13px Verdana;
+    
 }
 
 #site{
@@ -62,7 +63,7 @@ body {
 }
 
 #menu{
-    height:35px;
+
     background-color:rgb(187, 162, 162);
 }
 
@@ -94,8 +95,8 @@ body {
 }
 
 #conteudo{
-  padding: 10px;
   background-color:rgb(24, 24, 24);  
+
 }
 
 .titulo{
