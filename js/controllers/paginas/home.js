@@ -1,4 +1,3 @@
-
 function addCartaz(imagemSrc) {
     let ul = document
         .querySelector('#cartazes')
@@ -7,5 +6,7 @@ function addCartaz(imagemSrc) {
     ul.innerHTML += `<a href=""><li><img src="${imagemSrc}"></img></li></a>`;
 }
 
+console.log("teste");
+
 for (let i = 0; i < 20; i++)
-    addCartaz(`conteudos/inicio/imgs/cartazes/sonic.jpg`);
+    addCartaz(`../../../html/imgs/sonic.jpg`);
