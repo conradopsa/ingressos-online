@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server . -s"
+    "start": "npx http-server ."
   },
   "repository": {
     "type": "git",
