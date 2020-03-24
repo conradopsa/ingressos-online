@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/conradopsa/ingressos-online-front/issues"
   },
-  "homepage": "https://github.com/conradopsa/ingressos-online-front#readme"
+  "homepage": "https://github.com/conradopsa/ingressos-online-front#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
 }
