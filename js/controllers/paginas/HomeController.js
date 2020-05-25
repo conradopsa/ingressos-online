@@ -1,9 +1,6 @@
+'use strict';
 
-import { Cartaz } from '../../models/Cartaz.js';
-import { Cartazes } from '../../models/Cartazes.js'
-import { CartazesView } from '../../views/CartazesView.js';
-
-export function homeController() {
+function homeController() {
 
     let cartazes = new Cartazes();
 
@@ -15,7 +12,6 @@ export function homeController() {
 
     let cartazesView = new CartazesView('#cartazes');
     cartazesView.update(cartazes);
-
 
 }
 

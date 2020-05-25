@@ -1,6 +1,5 @@
 "use strict";
-
-export class Cartazes{
+class Cartazes{
     cartazes = []
 
     adicionar(cartaz){

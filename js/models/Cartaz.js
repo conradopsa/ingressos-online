@@ -1,4 +1,5 @@
-export class Cartaz{
+"use strict";
+class Cartaz{
     imagemSrc;
     link;
 

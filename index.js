@@ -1,7 +1,4 @@
-
 'use strict';
-
-import { setarPagina } from './js/helpers/Paginacao.js'
 
 //Pagina pricipal
 setarPagina("html/paginas/home.html")

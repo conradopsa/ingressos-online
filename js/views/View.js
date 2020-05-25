@@ -1,4 +1,6 @@
-export class View{
+'use strict';
+
+class View{
     elemento;
 
     constructor(seletor){

@@ -1,7 +1,6 @@
+'use strict';
 
-import { View } from '../views/View.js';
-
-export class CartazesView extends View{
+class CartazesView extends View{
 
     update(model) {
         let cartazes = model.retornarCartazes();

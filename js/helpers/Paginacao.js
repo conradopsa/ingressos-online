@@ -1,3 +1,5 @@
-export function setarPagina(pagina) {
-        $("#conteudo").load(pagina);
-    }
+'use strict';
+
+function setarPagina(pagina) {
+    $("#conteudo").load(pagina);
+}
