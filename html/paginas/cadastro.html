@@ -1,3 +1,51 @@
 <div class="titulo">CADASTRO:</div>
 
 <script src="conteudos/cadastro/index.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/formularios.css">
+<!--<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+
+<div style="background-image: url('html/imgs/Netflix.jpg');">
+    <div class="backgroud-style fade-to-black">
+
+        <div class="form-style-5 transparent">
+
+            <form action="javascript:logar()" method="post">
+
+                <div class="titulo">CADASTRO:</div>
+
+                <label>CPF:</label>
+                <input type="text" class="form-control" placeholder="Ex.: 000.000.000-00" data-mask="000.000.000-00" maxlength="14" autocomplete="off">
+
+                <label>Data de nascimento:</label>
+                <input type="date" id="data_nasc" />
+           
+                <label>Escolha um e-mail para logar:</label>
+                <input type="email" id="email" placeholder="Ex.: ositepoderiaestarmaistop@gmail.com"/>
+
+                <label>Escolha uma senha:</label>
+                <input type="password" id="senha" placeholder="Máximo 8 caracteres" maxlength="8" />
+
+                <input type="submit" title="Cadastrar"></input>
+               
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#cpf").mask("000.000.000-00");
+    });
+</script>
+
+
+
+<script src="../../node_modules/crypto-js/sha256.js"></script>
+<script src="../../js/controllers/paginas/CadastroController.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
