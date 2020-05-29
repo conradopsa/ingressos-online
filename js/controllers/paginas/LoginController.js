@@ -1,10 +1,42 @@
 'use strict';
 
+function delay(callback){
+    setTimeout(function () {
+        callback();
+    }, 3000);
+}
+
+function exibeErro(err) {
+    console.log("error", err);
+
+    let alertError = $(".alert-error");
+    alertError.html(`<strong>Erro!</strong> ${err ? err.error : "Problemas para realizar o login"}`);
+        
+    alertError.show();
+
+    delay(() => alertError.hide("slow"));
+}
+
+function exibeSucesso() {
+    let alertSucess = $(".alert-success");
+    alertSucess.show();
+
+    delay(() => alertSucess.hide("slow"));
+}
+
+function autenticar(dados) {
+    console.log("auth");
+    localStorage.setItem("dados", dados);
+    console.log(dados);
+
+    exibeSucesso();
+}
+
 function logar() {
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
 
-    let clientePromise = fetch(`http://localhost:3000/auth`, {
+    fetch(`http://localhost:3000/auth`, {
         method: "POST",
         headers: {
             'Accept': 'application/json',
@@ -15,12 +47,15 @@ function logar() {
             senha: senha
         })
     })
-        .then((res) => res.json().then(cliente => cliente))
-        .catch((err) => console.log(err));
+        .then((res) => {
+            if (res.ok)
+                res.json().then((dados) => autenticar(dados));                
+            else
+                exibeErro();
+        })
+        .catch((err) => exibeErro(err))
 
-    clientePromise.then(cliente => {
-        console.log(cliente);
-    })
+
 
     //$(".alert").alert()
 }

@@ -74,9 +74,15 @@ body {
 
 #menu li {
   float: left;
+  
 }
 
-#menu li a {
+#menu li:last-child {
+  float: right;
+  
+}
+
+#menu li * {
   display: block;
   color: white;
   text-align: center;

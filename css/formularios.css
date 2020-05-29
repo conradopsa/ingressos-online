@@ -148,4 +148,6 @@
 	background: #911010d3 !important;
 }
 
-
+.alert {
+	display: none;
+}
