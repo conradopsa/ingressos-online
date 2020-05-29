@@ -115,6 +115,10 @@ body {
   text-align: center;
 }
 
+#grupo {
+  float: left;
+}
+
 #rodape div {
   padding-top: 6px;
   padding-bottom: 6px;
