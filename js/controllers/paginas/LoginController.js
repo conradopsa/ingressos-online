@@ -24,10 +24,10 @@ function exibeSucesso() {
     delay(() => alertSucess.hide("slow"));
 }
 
-function autenticar(cliente) {
+function autenticar(dados) {
     console.log("auth");
-    localStorage.setItem("cliente", cliente);
-    console.log(cliente);
+    localStorage.setItem("dados", dados);
+    console.log(dados);
 
     exibeSucesso();
 }

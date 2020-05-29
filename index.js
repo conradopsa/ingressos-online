@@ -1,12 +1,15 @@
 'use strict';
 
 function checarLogin(){
-    let cliente = localStorage.getItem("cliente");
-    let token = cliente.token;
+    let dados = JSON.parse(localStorage.getItem("dados"));
+    let cliente = dados.cliente;
+    let token = dados.token;
 
-    if (token){
+    if (token){        
         $("#menuCadastro").hide();
         $("#menuLogin").hide();
+
+        $("#usuario").text(`${cliente.nomeCompleto}`)
     }  
 }
 
