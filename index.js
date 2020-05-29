@@ -1,7 +1,13 @@
 'use strict';
 
 function checarLogin(){
-    let dados = JSON.parse(localStorage.getItem("dados"));
+    let dados = JSON.parse(sessionStorage.getItem("dados"));
+
+    console.log(dados);
+    console.log(dados.cliente);
+    console.log(dados.token);
+
+
     let cliente = dados.cliente;
     let token = dados.token;
 

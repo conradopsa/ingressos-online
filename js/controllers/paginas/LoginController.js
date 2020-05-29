@@ -22,11 +22,12 @@ function exibeSucesso() {
     alertSucess.show();
 
     delay(() => alertSucess.hide("slow"));
+    location.reload();
 }
 
 function autenticar(dados) {
     console.log("auth");
-    localStorage.setItem("dados", dados);
+    sessionStorage.setItem("dados", JSON.stringify(dados));
     console.log(dados);
 
     exibeSucesso();
