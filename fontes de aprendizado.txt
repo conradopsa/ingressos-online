@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=GZV-FUdeVwE
+https://www.youtube.com/watch?v=5VCY9yCZnlc
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS
+https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch
+https://www.youtube.com/watch?v=KKTX1l3sZGk
+https://www.luiztools.com.br/post/como-usar-nodejs-mysql/
+https://stackoverflow.com/questions/30761154/how-to-enable-cors-on-express-js-4-x-on-all-files
